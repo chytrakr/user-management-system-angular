@@ -1,0 +1,62 @@
+.tool-bar {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.body {
+  padding: 20px 20px 20px 20px;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.labell {
+  color: #3f51b5 !important;
+}
+
+.drawer {
+  padding-top: 20px;
+}
+.sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.logout-icon {
+  padding: 0 14px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-menu-panel {
+  opacity: 1 !important;
+  transform: scale(1, 1) !important;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+   height: 30px !important;
+}
+
+.mat-list-base {
+  padding-top: 0 !important;
+}

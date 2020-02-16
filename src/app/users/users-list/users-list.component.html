@@ -1,0 +1,75 @@
+<div class="page-body">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2><strong>List of Users</strong></h2>
+        <!--<div class="row">-->
+          <!--<div class="col-lg-4 col-md-4 col-sm-6 col-12">-->
+            <!--<div class="form-group">-->
+              <!--<input class="form-control" placeholder="Search User Name" [(ngModel)]="page.search" (keyup)="page.offset=0;setPage(page)">-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <mat-card class="card">
+          <mat-card-content>
+            <ngx-datatable
+              #table
+              class='data-table bootstrap'
+              [columnMode]="'force'"
+              [headerHeight]="50"
+              [cssClasses]='customClasses'
+              [footerHeight]="50"
+              [rowHeight]="'auto'"
+              [rows]="page.rows"
+              [externalPaging]="true"
+              [loadingIndicator]="loading"
+              [count]="page.count"
+              [offset]="page.offset"
+              [limit]="page.limit"
+              (page)='setPage($event)'
+              [scrollbarH]="true">
+              <ngx-datatable-column name="Added At" [width]="140" [sortable]="false">
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                  <span>{{row.createdAt}}</span>
+                </ng-template>
+              </ngx-datatable-column>
+              <ngx-datatable-column name="User Name" [width]="90" [sortable]="false">
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                  <span>{{row.fullName}}</span>
+                </ng-template>
+              </ngx-datatable-column>
+              <ngx-datatable-column name="User ID" [width]="90" [sortable]="false">
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                  <span>{{row.userId}}</span>
+                </ng-template>
+              </ngx-datatable-column>
+              <ngx-datatable-column name="User Type" [width]="50" [sortable]="false">
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                  <span>{{row.userType}}</span>
+                </ng-template>
+              </ngx-datatable-column>
+              <ngx-datatable-column name="Email" [width]="130" [sortable]="false">
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                  <span>{{row.email}}</span>
+                </ng-template>
+              </ngx-datatable-column>
+              <ngx-datatable-column name="URL" [width]="90" [sortable]="false">
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                  <span>{{row.url ? row.url : '-'}}</span>
+                </ng-template>
+              </ngx-datatable-column>
+              <ngx-datatable-column name="gender" [width]="50" [sortable]="false">
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                  <span>{{row.gender}}</span>
+                </ng-template>
+              </ngx-datatable-column>
+              <ngx-datatable-column name="Update Users Details" [width]="90" [sortable]="false">
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                  <span (click)="openDialog(row)" style="cursor: pointer; color: #673ab7">Update</span>
+                </ng-template>
+              </ngx-datatable-column>
+            </ngx-datatable>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+</div>

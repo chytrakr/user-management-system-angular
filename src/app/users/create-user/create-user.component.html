@@ -1,0 +1,61 @@
+<div class="page-body">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2><strong>Create User</strong></h2>
+      <mat-card class="card">
+        <mat-card-content>
+          <form class="form" [formGroup]="userCreateForm" (ngSubmit)="submit()">
+            <mat-form-field class="full-width">
+              <mat-label>Full Name</mat-label>
+              <input formControlName="fullName" matInput placeholder="Full Name">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <mat-label>Contact Number</mat-label>
+              <input formControlName="contactNumber" matInput placeholder="Contact Number">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <mat-label>Email</mat-label>
+              <input formControlName="email" matInput placeholder="Email">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <mat-label>URL</mat-label>
+              <input formControlName="url" matInput placeholder="URL(https://chytra.dev)">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <mat-label>Address</mat-label>
+              <textarea formControlName="address" matInput placeholder="Address"></textarea>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <mat-label>Password</mat-label>
+              <input formControlName="password" matInput placeholder="URL(https://chytra.dev)">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <mat-label>User ID</mat-label>
+              <input formControlName="userId" matInput placeholder="URL(https://chytra.dev)">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <mat-label>user Type</mat-label>
+              <!--<input formControlName="userType" matInput placeholder="URL(https://chytra.dev)">-->
+              <mat-select formControlName="userType">
+                <mat-option *ngFor="let type of userType" [value]="type.value">
+                  {{type.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <mat-label>Gender</mat-label>
+              <mat-select formControlName="gender">
+                <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                  {{gender.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div class="button-row">
+              <button type="submit" mat-raised-button color="primary">Create</button>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

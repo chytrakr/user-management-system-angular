@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>Update User <span style="float: right; cursor: pointer" (click)="hide()"><i class="fas fa-window-close"></i></span></h2>
+<hr>
+<mat-dialog-content class="mat-typography" style="width: 100%">
+  <form class="form" [formGroup]="userUpdateForm" (ngSubmit)="submit()">
+    <mat-form-field class="full-width">
+      <mat-label>Full Name</mat-label>
+      <input formControlName="fullName" matInput placeholder="Full Name">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Contact Number</mat-label>
+      <input formControlName="contactNumber" matInput placeholder="Contact Number">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Email</mat-label>
+      <input formControlName="email" matInput placeholder="Email">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>URL</mat-label>
+      <input formControlName="url" matInput placeholder="URL(https://chytra.dev)">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Address</mat-label>
+      <textarea formControlName="address" matInput placeholder="Address"></textarea>
+    </mat-form-field>
+    <hr>
+    <div class="button-row">
+      <button type="submit" style="float: right" mat-raised-button color="primary">Update</button>
+    </div>
+  </form>
+</mat-dialog-content>
