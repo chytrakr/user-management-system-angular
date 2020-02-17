@@ -31,10 +31,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Screenshots of project
-<br/>
+# Screenshots of project
 
-# Create user
+## Create user
 
 ![Create user](https://github.com/chytrakr/user-management-system-angular/blob/master/src/assets/image1.jpg)
 
@@ -42,12 +41,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <br/><br/>
 
-# Users list
+## Users list
 
 ![Users list](https://github.com/chytrakr/user-management-system-angular/blob/master/src/assets/image3.jpg)
 
 <br/><br/>
 
-# Update user
+## Update user
 
 ![Update user](https://github.com/chytrakr/user-management-system-angular/blob/master/src/assets/image4.jpg)
