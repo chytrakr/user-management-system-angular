@@ -30,3 +30,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Screenshots of project
+<br/>
+# Create user
+![Create user](https://github.com/chytrakr/user-management-system-angular/blob/master/src/assets/image1.jpg)
+![Create user confirmation](https://github.com/chytrakr/user-management-system-angular/blob/master/src/assets/image2.jpg)
+<br/><br/>
+# Users list
+![Users list](https://github.com/chytrakr/user-management-system-angular/blob/master/src/assets/image3.jpg)
+<br/><br/>
+# Update user
+![Update user](https://github.com/chytrakr/user-management-system-angular/blob/master/src/assets/image4.jpg)
