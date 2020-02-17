@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
+# Steps to run the project
+1. Clone the project and go to the project directory
+2. Intall the dependencies by entering the command npm install
+3. Enter 'ng serve' command in the terminal
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
