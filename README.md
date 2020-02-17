@@ -33,6 +33,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Screenshots of project
 <br/>
+
 # Create user
 
 ![Create user](https://github.com/chytrakr/user-management-system-angular/blob/master/src/assets/image1.jpg)
